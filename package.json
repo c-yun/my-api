@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/c-yun/my-api/issues"
   },
-  "homepage": "https://github.com/c-yun/my-api#readme"
+  "homepage": "https://github.com/c-yun/my-api#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "pg": "^7.8.1",
+    "sequelize": "^4.42.0"
+  }
 }
