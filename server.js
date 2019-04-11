@@ -28,9 +28,7 @@ app.get('/movies/:id', function(req,res) {
 
 app.delete('/movies/:id', function(req,res) {
     db.movies.destroy({
-        where: {
-            id: req.params.id
-        }
+        where: {id: req.params.id}
     }).then(function(data) {
         res.redirect("/movies");
     });
@@ -48,9 +46,7 @@ app.put('/movies/:id', function(req,res) {
         year: req.body.year,
         genre: req.body.genre 
     }, {
-        where: {
-            id: parseInt(req.params.id)
-    }
+        where: {id: parseInt(req.params.id)}
 
     }).then(function(data) {
         res.redirect("/movies/" + parseInt(req.params.id));
